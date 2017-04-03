@@ -34,10 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
 		var oDiv2=document.querySelector('#a');
-		alert(123)
-		window.addEventListener("batterystatus", function(ev) {
-            oDiv2.innerHTML = 'level:' + ev.level + ', isPlugged:' + ev.isPlugged
-        }, false);
+		alert(234)
+		oDiv2.innerHTML =navigator.contacts
 		
 		
         app.receivedEvent('deviceready');
